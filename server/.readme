@@ -1,9 +1,0 @@
-A collection of apis enabling. 
-1] creation of jwt tokens.
-2] passing jwt tokens as part of http only cookies.
-3] Authorizing protected routes using jwt tokens.
-4] refreshing jwt tokens.
-5] deleting jwt tokens.
-
-1] To start server. npm run server:start
-2] To start client. Import colletion 'jwt-with-httponlycookie-server.postman_collection' in postman. 
