@@ -1,0 +1,7 @@
+1] storing jwt in session or local storage.
+   Never put sensitive information in session/local storage. Third pary javascript can access
+   session/local storage very easily.
+2] storing jwt in http only cookies
+   This is better way of storing jwts as 
+    2.1] httponly cookies cannot be accessed by browser javascript.
+    2.2] by default httponly cookie will be sent along with each http request.
