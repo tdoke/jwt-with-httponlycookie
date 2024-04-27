@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "e3bc9bde-5d73-4ea5-8941-0038484dfc08",
+		"name": "jwt-with-httponlycookie-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12092840"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"trushant\",\r\n    \"password\": \"doke\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/protected/details/user"
+			},
+			"response": []
+		},
+		{
+			"name": "accessTokenRefresh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/protected/token/access/refresh"
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/logout"
+			},
+			"response": []
+		}
+	]
+}
